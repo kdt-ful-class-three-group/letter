@@ -17,18 +17,20 @@
       justify-content: center;
       align-items: center;
     }
-    h3 {
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
 
     section {
       width: 80%;
       height: 80%;
       box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
       border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p{
+      padding: 0 30px;
+      font-size: 20px;
     }
 
     #charac {
@@ -36,19 +38,19 @@
       top: 3%;
       left: 10%;
       cursor: pointer;
+      transition: all 0.3s ease;
     }
   </style>
 </head>
-<body>
-  <h3>이미지 클릭하세요</h3>
-  <div id="root">
-    <section>
-      <p>test</p>
+<body  class="m-0 p-0">
+  <div id="root" class="w-full h-screen flex justify-center items-center">
+    <section class="w-4/5 h-4/5 shadow-lg rounded-2xl flex justify-center items-center">
+      <p class="px-8 text-xl">test</p>
     </section>
   </div>
-  <div id="charac">
+  <div id="charac" class="absolute top-[3%] left-[10%] cursor-pointer transition-all duration-300 ease-in-out">
     <div>
-      <img src="/squirtle.png" alt="Suqirtle" style="width: 50px;">
+      <img src="/squirtle.png" alt="Suqirtle" class="w-[50px]">
     </div>
   </div>
   <script src="/script.js"></script>
