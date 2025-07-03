@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div class="wrap">
+    <h1>다음 Promise 코드의 실행 결과를 설명해주세요</h1>
+    <p>이걸 푼 당신은 수료 할 자격이 생깁니다.. 콘솔 보세요</p>
+    <p>setTimeout(() => {</p>
+    <span>console.log('1')</span>
+
+    <span>setTimeout(() => {console.log('2')} )</span>
+
+    <span>Promise.resolve().then(()=> console.log('3'))</span>
+
+    <span>console.log('4')</span>
+    <p>})</p>
+    <p>Promise.resolve().then(() => {</p>
+    <span>console.log('5')</span>
+
+
+
+    <span>setTimeout(() => {console.log('6')} )</span>
+    <span>Promise.resolve().then(()=> console.log('7'))</span>
+    <span>console.log('8')</span>
+
+
+    <p>})</p>
+    <p>console.log('9')</p>
+
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
