@@ -3,11 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>PAGE</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #root {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h3 {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    section {
+      width: 80%;
+      height: 80%;
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+      border-radius: 20px;
+    }
+
+    #charac {
+      position: absolute;
+      top: 3%;
+      left: 10%;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
+  <h3>이미지 클릭하세요</h3>
   <div id="root">
-    <p>test</p>
+    <section>
+      <p>test</p>
+    </section>
   </div>
+  <div id="charac">
+    <div>
+      <img src="/squirtle.png" alt="Suqirtle" style="width: 50px;">
+    </div>
+  </div>
+  <script src="/script.js"></script>
 </body>
 </html>
