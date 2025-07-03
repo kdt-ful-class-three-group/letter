@@ -1,4 +1,4 @@
-# KDT에서 살아남는법.txt
+# KDT에서 살아남는법.md
 
 ![네이버BV](./public/images/naverBV.png)
 
