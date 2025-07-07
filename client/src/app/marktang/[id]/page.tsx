@@ -24,7 +24,7 @@ export default function MarktangDynamicPage() {
     case '4': return <MarktangPage4 />;
     case '5': return <MarktangPage5 />;
     case 'good': return <MarktangResultGood />;
-    case 'notgood': return <MarktangResultBad />;
+    case 'bad': return <MarktangResultBad />;
     default: return <div>페이지를 찾을 수 없습니다.</div>;
   }
 }
