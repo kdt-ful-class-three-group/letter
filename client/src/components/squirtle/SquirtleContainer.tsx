@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import './SquirtleContainer.css';
+'use client';
+import React, { useState } from 'react';
+// import './Squirtle.css';
 
 type Message = {
   content: string;
@@ -14,7 +15,7 @@ const defaultMessages: Message[] = [
   { content: '화이팅!' }
 ];
 
-const SquirtleContainer = () => {
+export const SquirtleContainer = () => {
   const [messages] = useState<Message[]>(defaultMessages);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -35,12 +36,17 @@ const SquirtleContainer = () => {
   };
 
   return (
-    <div className="squirtle-container">
-      <section>
+    <div className="w-full h-screen flex flex-col justify-center items-center relative">
+      <section className="w-4/5 h-4/5 shadow-lg rounded-2xl flex justify-center items-center px-8 text-xl">
         <p>{messages[currentIndex]?.content || ''}</p>
       </section>
-      <div id="charac" style={{ position: 'absolute', left: getCharacterLeft(), transition: 'left 0.3s' }} onClick={handleClick}>
-        <img src="/squirtle.png" alt="squirtle" />
+      <div
+        id="charac"
+        className="absolute transition-all duration-300 ease-in-out cursor-pointer"
+        style={{ left: getCharacterLeft(), top: '3%' }}
+        onClick={handleClick}
+      >
+        <img src="/squirtle.png" alt="squirtle" className="w-[50px]" />
       </div>
     </div>
   );
