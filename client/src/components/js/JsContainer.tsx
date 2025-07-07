@@ -47,22 +47,34 @@ export const JsContainer = () => {
   }, []);
 
   return (
-    <div className="wrap">
-      <h1>다음 Promise 코드의 실행 결과를 설명해주세요</h1>
-      <p>이걸 푼 당신은 수료 할 자격이 생깁니다.. 콘솔 보세요</p>
-      <p>setTimeout(() =&gt; {'{'}</p>
-      <span>console.log('1')</span><br />
-      <span>setTimeout(() =&gt; {'{'}console.log('2'){'})'}</span><br />
-      <span>Promise.resolve().then(() =&gt; console.log('3'))</span><br />
-      <span>console.log('4')</span>
-      <p>{'}'}</p>
-      <p>Promise.resolve().then(() =&gt; {'{'}</p>
-      <span>console.log('5')</span><br />
-      <span>setTimeout(() =&gt; {'{'}console.log('6'){'}'})</span><br />
-      <span>Promise.resolve().then(() =&gt; console.log('7'))</span><br />
-      <span>console.log('8')</span>
-      <p>{'}'}</p>
-      <p>console.log('9')</p>
+    <div className="wrap px-6 py-10 max-w-3xl mx-auto space-y-6">
+      <h1 className="text-4xl font-bold mb-6">
+        다음 Promise 코드의 실행 결과를 설명해주세요
+      </h1>
+      <p className="text-base leading-relaxed text-gray-700">
+        이걸 푼 당신은 수료 할 자격이 생깁니다.. 콘솔 보세요
+      </p>
+      <p className="text-base leading-relaxed text-gray-700">
+        setTimeout(() =&gt; {'{'}
+      </p>
+      <div>
+        <span className="block text-base leading-relaxed text-gray-700">console.log('1')</span>
+        <span className="block text-base leading-relaxed text-gray-700">setTimeout(() =&gt; {'{'}console.log('2'){'})'}</span>
+        <span className="block text-base leading-relaxed text-gray-700">Promise.resolve().then(() =&gt; console.log('3'))</span>
+        <span className="block text-base leading-relaxed text-gray-700">console.log('4')</span>
+      </div>
+      <p className="text-base leading-relaxed text-gray-700">{'}'}</p>
+      <p className="text-base leading-relaxed text-gray-700">
+        Promise.resolve().then(() =&gt; {'{'}
+      </p>
+      <div>
+        <span className="block text-base leading-relaxed text-gray-700">console.log('5')</span>
+        <span className="block text-base leading-relaxed text-gray-700">setTimeout(() =&gt; {'{'}console.log('6'){'}'})</span>
+        <span className="block text-base leading-relaxed text-gray-700">Promise.resolve().then(() =&gt; console.log('7'))</span>
+        <span className="block text-base leading-relaxed text-gray-700">console.log('8')</span>
+      </div>
+      <p className="text-base leading-relaxed text-gray-700">{'}'}</p>
+      <p className="text-base leading-relaxed text-gray-700">console.log('9')</p>
     </div>
   );
 };
