@@ -28,7 +28,7 @@ export default function MarktangPage4() {
           <button
             className="text-5xl font-bold cursor-pointer"
             onClick={() => {
-              router.push(`/3`);
+              router.push(`/marktang/3`);
             }}
           >
             ◀
@@ -36,7 +36,7 @@ export default function MarktangPage4() {
           <button
             className="text-5xl font-bold cursor-pointer"
             onClick={() => {
-              router.push(`/5`);
+              router.push(`/marktang/5`);
             }}
           >
             ▶

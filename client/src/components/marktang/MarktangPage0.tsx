@@ -22,7 +22,7 @@ export default function MarktangPage0() {
           <button
             className="text-5xl font-bold cursor-pointer"
             onClick={() => {
-              router.push(`/1`);
+              router.push(`/marktang/1`);
             }}
           >
             ▶
