@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/rougela/intro/common/Button";
 
-const pages = ['yadon', 'rougela', 'squirtle', 'lizard', 'monodo', 'raffle', 'marktang', 'golem'];
+const pages = ['yadon', 'rougela', 'squirtle', 'lizard', 'monodo', 'raffle', 'marktang', 'golem', 'js'];
 
 const pageLabels: Record<string, string> = {
   yadon: '야돈',
@@ -12,7 +12,8 @@ const pageLabels: Record<string, string> = {
   monodo: '모노두',
   raffle: '라플레시아',
   marktang: '마크탕',
-  golem: '골렘'
+  golem: '골렘',
+  js:'팽도리'
 };
 
 export default function Page() {

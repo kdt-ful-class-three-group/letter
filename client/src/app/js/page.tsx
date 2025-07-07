@@ -1,8 +1,8 @@
+import JsContainer from "@/components/js/JsContainer";
 export default function JsPage() {
   return (
     <div>
-      <h1>JavaScript Page</h1>
-      <p>This is the JavaScript page content.</p>
+      <JsContainer />
     </div>
   );
 } 
